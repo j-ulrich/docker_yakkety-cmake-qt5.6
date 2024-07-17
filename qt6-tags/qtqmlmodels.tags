@@ -30,25 +30,18 @@
         <name>QtQml.Models.DelegateModelGroup</name>
         <filename>qml-qtqml-models-delegatemodelgroup.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>object</type>
-            <name>get</name>
+            <type></type>
+            <name>addGroups</name>
             <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
-            <anchor>get-method</anchor>
-            <arglist>(int index)</arglist>
+            <anchor>addGroups-method</anchor>
+            <arglist>(int index, int count, stringlist groups)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
-            <name>insert</name>
+            <name>changed</name>
             <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
-            <anchor>insert-method</anchor>
-            <arglist>(int index, jsdict data, array groups)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>insert</name>
-            <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
-            <anchor>insert-method</anchor>
-            <arglist>(jsdict data, var groups)</arglist>
+            <anchor>changed-signal</anchor>
+            <arglist>(array removed, array inserted)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -73,10 +66,31 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
-            <name>resolve</name>
+            <name>insert</name>
             <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
-            <anchor>resolve-method</anchor>
-            <arglist>(int from, int to)</arglist>
+            <anchor>insert-method</anchor>
+            <arglist>(int index, jsdict data, array groups)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>insert</name>
+            <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
+            <anchor>insert-method</anchor>
+            <arglist>(jsdict data, var groups)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>move</name>
+            <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
+            <anchor>move-method</anchor>
+            <arglist>(var from, var to, int count)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>object</type>
+            <name>get</name>
+            <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
+            <anchor>get-method</anchor>
+            <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -87,17 +101,17 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
-            <name>addGroups</name>
-            <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
-            <anchor>addGroups-method</anchor>
-            <arglist>(int index, int count, stringlist groups)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
             <name>removeGroups</name>
             <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
             <anchor>removeGroups-method</anchor>
             <arglist>(int index, int count, stringlist groups)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>resolve</name>
+            <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
+            <anchor>resolve-method</anchor>
+            <arglist>(int from, int to)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -106,24 +120,17 @@
             <anchor>setGroups-method</anchor>
             <arglist>(int index, int count, stringlist groups)</arglist>
         </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>move</name>
-            <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
-            <anchor>move-method</anchor>
-            <arglist>(var from, var to, int count)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>changed</name>
-            <anchorfile>qml-qtqml-models-delegatemodelgroup.html</anchorfile>
-            <anchor>changed-signal</anchor>
-            <arglist>(array removed, array inserted)</arglist>
-        </member>
     </compound>
     <compound kind="class">
         <name>QtQml.Models.Instantiator</name>
         <filename>qml-qtqml-models-instantiator.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QtObject</type>
+            <name>objectAt</name>
+            <anchorfile>qml-qtqml-models-instantiator.html</anchorfile>
+            <anchor>objectAt-method</anchor>
+            <arglist>(int index)</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>objectAdded</name>
@@ -138,30 +145,30 @@
             <anchor>objectRemoved-signal</anchor>
             <arglist>(int index, QtObject object)</arglist>
         </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QtObject</type>
-            <name>objectAt</name>
-            <anchorfile>qml-qtqml-models-instantiator.html</anchorfile>
-            <anchor>objectAt-method</anchor>
-            <arglist>(int index)</arglist>
-        </member>
     </compound>
     <compound kind="class">
         <name>QtQml.Models.ItemSelectionModel</name>
         <filename>qml-qtqml-models-itemselectionmodel.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
-            <name>isSelected</name>
+            <type>QModelIndexList</type>
+            <name>selectedColumns</name>
             <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>isSelected-method</anchor>
-            <arglist>(QModelIndex index)</arglist>
+            <anchor>selectedColumns-method</anchor>
+            <arglist>(int row)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QModelIndexList</type>
+            <name>selectedRows</name>
+            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
+            <anchor>selectedRows-method</anchor>
+            <arglist>(int column)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
-            <name>isRowSelected</name>
+            <name>columnIntersectsSelection</name>
             <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>isRowSelected-method</anchor>
-            <arglist>(int row, QModelIndex parent)</arglist>
+            <anchor>columnIntersectsSelection-method</anchor>
+            <arglist>(int column, QModelIndex parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -172,52 +179,38 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
+            <name>isRowSelected</name>
+            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
+            <anchor>isRowSelected-method</anchor>
+            <arglist>(int row, QModelIndex parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isSelected</name>
+            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
+            <anchor>isSelected-method</anchor>
+            <arglist>(QModelIndex index)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
             <name>rowIntersectsSelection</name>
             <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
             <anchor>rowIntersectsSelection-method</anchor>
             <arglist>(int row, QModelIndex parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
-            <name>columnIntersectsSelection</name>
+            <type></type>
+            <name>currentChanged</name>
             <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>columnIntersectsSelection-method</anchor>
-            <arglist>(int column, QModelIndex parent)</arglist>
+            <anchor>currentChanged-signal</anchor>
+            <arglist>(QModelIndex current, QModelIndex previous)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QModelIndexList</type>
-            <name>selectedRows</name>
+            <type></type>
+            <name>selectionChanged</name>
             <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>selectedRows-method</anchor>
-            <arglist>(int column)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QModelIndexList</type>
-            <name>selectedColumns</name>
-            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>selectedColumns-method</anchor>
-            <arglist>(int row)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>setCurrentIndex</name>
-            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>setCurrentIndex-method</anchor>
-            <arglist>(QModelIndex index, SelectionFlags command)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>select</name>
-            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>select-method</anchor>
-            <arglist>(QModelIndex index, SelectionFlags command)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>select</name>
-            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>select-method</anchor>
-            <arglist>(QItemSelection selection, SelectionFlags command)</arglist>
+            <anchor>selectionChanged-signal</anchor>
+            <arglist>(QItemSelection selected, QItemSelection deselected)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -228,9 +221,9 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
-            <name>reset</name>
+            <name>clearCurrentIndex</name>
             <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>reset-method</anchor>
+            <anchor>clearCurrentIndex-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -242,24 +235,31 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
-            <name>clearCurrentIndex</name>
+            <name>reset</name>
             <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>clearCurrentIndex-method</anchor>
+            <anchor>reset-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>selectionChanged</name>
+            <type>void</type>
+            <name>select</name>
             <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>selectionChanged-signal</anchor>
-            <arglist>(QItemSelection selected, QItemSelection deselected)</arglist>
+            <anchor>select-method</anchor>
+            <arglist>(QItemSelection selection, SelectionFlags command)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>currentChanged</name>
+            <type>void</type>
+            <name>select</name>
             <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>currentChanged-signal</anchor>
-            <arglist>(QModelIndex current, QModelIndex previous)</arglist>
+            <anchor>select-method</anchor>
+            <arglist>(QModelIndex index, SelectionFlags command)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setCurrentIndex</name>
+            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
+            <anchor>setCurrentIndex-method</anchor>
+            <arglist>(QModelIndex index, SelectionFlags command)</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -271,17 +271,17 @@
         <filename>qml-qtqml-models-listmodel.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
+            <name>append</name>
+            <anchorfile>qml-qtqml-models-listmodel.html</anchorfile>
+            <anchor>append-method</anchor>
+            <arglist>(jsobject dict)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
             <name>clear</name>
             <anchorfile>qml-qtqml-models-listmodel.html</anchorfile>
             <anchor>clear-method</anchor>
             <arglist>()</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>remove</name>
-            <anchorfile>qml-qtqml-models-listmodel.html</anchorfile>
-            <anchor>remove-method</anchor>
-            <arglist>(int index, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -298,18 +298,18 @@
             <arglist>(int from, int to, int n)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>append</name>
-            <anchorfile>qml-qtqml-models-listmodel.html</anchorfile>
-            <anchor>append-method</anchor>
-            <arglist>(jsobject dict)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
             <type>object</type>
             <name>get</name>
             <anchorfile>qml-qtqml-models-listmodel.html</anchorfile>
             <anchor>get-method</anchor>
             <arglist>(int index)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>remove</name>
+            <anchorfile>qml-qtqml-models-listmodel.html</anchorfile>
+            <anchor>remove-method</anchor>
+            <arglist>(int index, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -337,18 +337,18 @@
         <name>QtQml.Models.ObjectModel</name>
         <filename>qml-qtqml-models-objectmodel.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>object</type>
-            <name>get</name>
-            <anchorfile>qml-qtqml-models-objectmodel.html</anchorfile>
-            <anchor>get-method</anchor>
-            <arglist>(int index)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>append</name>
             <anchorfile>qml-qtqml-models-objectmodel.html</anchorfile>
             <anchor>append-method</anchor>
             <arglist>(object item)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>clear</name>
+            <anchorfile>qml-qtqml-models-objectmodel.html</anchorfile>
+            <anchor>clear-method</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -365,18 +365,18 @@
             <arglist>(int from, int to, int n)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>object</type>
+            <name>get</name>
+            <anchorfile>qml-qtqml-models-objectmodel.html</anchorfile>
+            <anchor>get-method</anchor>
+            <arglist>(int index)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>remove</name>
             <anchorfile>qml-qtqml-models-objectmodel.html</anchorfile>
             <anchor>remove-method</anchor>
             <arglist>(int index, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>clear</name>
-            <anchorfile>qml-qtqml-models-objectmodel.html</anchorfile>
-            <anchor>clear-method</anchor>
-            <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -387,6 +387,13 @@
         <name>Qt.labs.qmlmodels.TableModel</name>
         <filename>qml-qt-labs-qmlmodels-tablemodel.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QModelIndex</type>
+            <name>index</name>
+            <anchorfile>qml-qt-labs-qmlmodels-tablemodel.html</anchorfile>
+            <anchor>index-method</anchor>
+            <arglist>(int row, int column)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>appendRow</name>
             <anchorfile>qml-qt-labs-qmlmodels-tablemodel.html</anchorfile>
@@ -394,18 +401,18 @@
             <arglist>(object row)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>setData</name>
+            <anchorfile>qml-qt-labs-qmlmodels-tablemodel.html</anchorfile>
+            <anchor>setData-method</anchor>
+            <arglist>(QModelIndex index, string role, variant value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>clear</name>
             <anchorfile>qml-qt-labs-qmlmodels-tablemodel.html</anchorfile>
             <anchor>clear-method</anchor>
             <arglist>()</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>object</type>
-            <name>getRow</name>
-            <anchorfile>qml-qt-labs-qmlmodels-tablemodel.html</anchorfile>
-            <anchor>getRow-method</anchor>
-            <arglist>(int rowIndex)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -422,6 +429,13 @@
             <arglist>(int fromRowIndex, int toRowIndex, int rows)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>object</type>
+            <name>getRow</name>
+            <anchorfile>qml-qt-labs-qmlmodels-tablemodel.html</anchorfile>
+            <anchor>getRow-method</anchor>
+            <arglist>(int rowIndex)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>removeRow</name>
             <anchorfile>qml-qt-labs-qmlmodels-tablemodel.html</anchorfile>
@@ -436,25 +450,11 @@
             <arglist>(int rowIndex, object row)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QModelIndex</type>
-            <name>index</name>
-            <anchorfile>qml-qt-labs-qmlmodels-tablemodel.html</anchorfile>
-            <anchor>index-method</anchor>
-            <arglist>(int row, int column)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
             <type>variant</type>
             <name>data</name>
             <anchorfile>qml-qt-labs-qmlmodels-tablemodel.html</anchorfile>
             <anchor>data-method</anchor>
             <arglist>(QModelIndex index, string role)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
-            <name>setData</name>
-            <anchorfile>qml-qt-labs-qmlmodels-tablemodel.html</anchorfile>
-            <anchor>setData-method</anchor>
-            <arglist>(QModelIndex index, string role, variant value)</arglist>
         </member>
     </compound>
     <compound kind="class">

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tagfile>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.BoxShape</name>
+        <filename>qml-qtquick3dphysics-boxshape.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.CapsuleShape</name>
+        <filename>qml-qtquick3dphysics-capsuleshape.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.CharacterController</name>
+        <filename>qml-qtquick3dphysics-charactercontroller.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>teleport</name>
+            <anchorfile>qml-qtquick3dphysics-charactercontroller.html</anchorfile>
+            <anchor>teleport-method</anchor>
+            <arglist>(vector3d position)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.CollisionNode</name>
+        <filename>qml-qtquick3dphysics-collisionnode.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>bodyContact</name>
+            <anchorfile>qml-qtquick3dphysics-collisionnode.html</anchorfile>
+            <anchor>bodyContact-signal</anchor>
+            <arglist>(CollisionNode *body, list&lt;vector3D&gt; positions, list&lt;vector3D&gt; impulses, list&lt;vector3D&gt; normals)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.CollisionShape</name>
+        <filename>qml-qtquick3dphysics-collisionshape.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.ConvexMeshShape</name>
+        <filename>qml-qtquick3dphysics-convexmeshshape.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.DynamicRigidBody</name>
+        <filename>qml-qtquick3dphysics-dynamicrigidbody.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>applyCentralForce</name>
+            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchor>applyCentralForce-method</anchor>
+            <arglist>(vector3d force)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>applyCentralImpulse</name>
+            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchor>applyCentralImpulse-method</anchor>
+            <arglist>(vector3d impulse)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>applyForce</name>
+            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchor>applyForce-method</anchor>
+            <arglist>(vector3d force, vector3d position)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>applyImpulse</name>
+            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchor>applyImpulse-method</anchor>
+            <arglist>(vector3d impulse, vector3d position)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>applyTorque</name>
+            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchor>applyTorque-method</anchor>
+            <arglist>(vector3d torque)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>applyTorqueImpulse</name>
+            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchor>applyTorqueImpulse-method</anchor>
+            <arglist>(vector3d impulse)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>reset</name>
+            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchor>reset-method</anchor>
+            <arglist>(vector3d position, vector3d eulerRotation)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.DynamicsWorld</name>
+        <filename>qml-qtquick3dphysics-dynamicsworld.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.HeightFieldShape</name>
+        <filename>qml-qtquick3dphysics-heightfieldshape.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.PhysicsBody</name>
+        <filename>qml-qtquick3dphysics-physicsbody.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.PhysicsMaterial</name>
+        <filename>qml-qtquick3dphysics-physicsmaterial.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.PlaneShape</name>
+        <filename>qml-qtquick3dphysics-planeshape.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.SphereShape</name>
+        <filename>qml-qtquick3dphysics-sphereshape.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.StaticRigidBody</name>
+        <filename>qml-qtquick3dphysics-staticrigidbody.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.TriangleMeshShape</name>
+        <filename>qml-qtquick3dphysics-trianglemeshshape.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3DPhysics.TriggerBody</name>
+        <filename>qml-qtquick3dphysics-triggerbody.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>bodyEntered</name>
+            <anchorfile>qml-qtquick3dphysics-triggerbody.html</anchorfile>
+            <anchor>bodyEntered-signal</anchor>
+            <arglist>(CollisionNode *body)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>bodyExited</name>
+            <anchorfile>qml-qtquick3dphysics-triggerbody.html</anchorfile>
+            <anchor>bodyExited-signal</anchor>
+            <arglist>(CollisionNode *body)</arglist>
+        </member>
+    </compound>
+</tagfile>

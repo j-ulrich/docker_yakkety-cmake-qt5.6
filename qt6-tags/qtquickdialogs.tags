@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tagfile>
+    <compound kind="class">
+        <name>QtQuick.Dialogs.ColorDialog</name>
+        <filename>qml-qtquick-dialogs-colordialog.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Dialogs.Dialog</name>
+        <filename>qml-qtquick-dialogs-dialog.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>accept</name>
+            <anchorfile>qml-qtquick-dialogs-dialog.html</anchorfile>
+            <anchor>accept-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>accepted</name>
+            <anchorfile>qml-qtquick-dialogs-dialog.html</anchorfile>
+            <anchor>accepted-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>close</name>
+            <anchorfile>qml-qtquick-dialogs-dialog.html</anchorfile>
+            <anchor>close-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>done</name>
+            <anchorfile>qml-qtquick-dialogs-dialog.html</anchorfile>
+            <anchor>done-method</anchor>
+            <arglist>(StandardCode result)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>open</name>
+            <anchorfile>qml-qtquick-dialogs-dialog.html</anchorfile>
+            <anchor>open-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>reject</name>
+            <anchorfile>qml-qtquick-dialogs-dialog.html</anchorfile>
+            <anchor>reject-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>rejected</name>
+            <anchorfile>qml-qtquick-dialogs-dialog.html</anchorfile>
+            <anchor>rejected-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Dialogs.FileDialog</name>
+        <filename>qml-qtquick-dialogs-filedialog.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Dialogs.FolderDialog</name>
+        <filename>qml-qtquick-dialogs-folderdialog.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Dialogs.FontDialog</name>
+        <filename>qml-qtquick-dialogs-fontdialog.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Dialogs.MessageDialog</name>
+        <filename>qml-qtquick-dialogs-messagedialog.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>buttonClicked</name>
+            <anchorfile>qml-qtquick-dialogs-messagedialog.html</anchorfile>
+            <anchor>buttonClicked-signal</anchor>
+            <arglist>(QPlatformDialogHelper::StandardButton button, QPlatformDialogHelper::ButtonRole role)</arglist>
+        </member>
+    </compound>
+</tagfile>

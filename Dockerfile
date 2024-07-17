@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM ubuntu:noble
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     cmake \
@@ -24,31 +24,49 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     curl \
     unzip \
     && rm -rf /var/lib/apt/lists/*
-RUN pip3 install "coverxygen==1.7.0"
+RUN pip3 install "coverxygen==1.8.1"
 
 RUN qtchooser -install 6 /usr/bin/qmake6 && qtchooser -install -f default /usr/bin/qmake6
-RUN qbs setup-toolchains --detect && qbs setup-qt /usr/bin/qmake6 qt-6-2-4-bin && qbs config defaultProfile qt-6-2-4-bin
+RUN qbs setup-toolchains --detect && qbs setup-qt /usr/bin/qmake6 qt-6-4-2-bin && qbs config defaultProfile qt-6-4-2-bin
 
 COPY sonar-scanner /opt/sonar-scanner/
 RUN chmod a+x /opt/sonar-scanner/bin/sonar-scanner*
 
-COPY qt6-tags/qdoc.tags             /usr/share/qt6/doc/qdoc/qdoc.tags
-COPY qt6-tags/qmake.tags            /usr/share/qt6/doc/qmake/qmake.tags
-COPY qt6-tags/qtconcurrent.tags     /usr/share/qt6/doc/qtconcurrent/qtconcurrent.tags
-COPY qt6-tags/qtcore.tags           /usr/share/qt6/doc/qtcore/qtcore.tags
-COPY qt6-tags/qtdbus.tags           /usr/share/qt6/doc/qtdbus/qtdbus.tags
-COPY qt6-tags/qtgui.tags            /usr/share/qt6/doc/qtgui/qtgui.tags
-COPY qt6-tags/qtlabsplatform.tags   /usr/share/qt6/doc/qtlabsplatform/qtlabsplatform.tags
-COPY qt6-tags/qtnetwork.tags        /usr/share/qt6/doc/qtnetwork/qtnetwork.tags
-COPY qt6-tags/qtopengl.tags         /usr/share/qt6/doc/qtopengl/qtopengl.tags
-COPY qt6-tags/qtprintsupport.tags   /usr/share/qt6/doc/qtprintsupport/qtprintsupport.tags
-COPY qt6-tags/qtqml.tags            /usr/share/qt6/doc/qtqml/qtqml.tags
-COPY qt6-tags/qtqmlmodels.tags      /usr/share/qt6/doc/qtqmlmodels/qtqmlmodels.tags
-COPY qt6-tags/qtqmltest.tags        /usr/share/qt6/doc/qtqmltest/qtqmltest.tags
-COPY qt6-tags/qtquick.tags          /usr/share/qt6/doc/qtquick/qtquick.tags
-COPY qt6-tags/qtquickcontrols.tags  /usr/share/qt6/doc/qtquickcontrols/qtquickcontrols.tags
-COPY qt6-tags/qtsql.tags            /usr/share/qt6/doc/qtsql/qtsql.tags
-COPY qt6-tags/qtsvg.tags            /usr/share/qt6/doc/qtsvg/qtsvg.tags
-COPY qt6-tags/qttestlib.tags        /usr/share/qt6/doc/qttestlib/qttestlib.tags
-COPY qt6-tags/qtwidgets.tags        /usr/share/qt6/doc/qtwidgets/qtwidgets.tags
-COPY qt6-tags/qtxml.tags            /usr/share/qt6/doc/qtxml/qtxml.tags
+COPY qt6-tags/qdoc.tags               /usr/share/qt6/doc/qdoc/qdoc.tags
+COPY qt6-tags/qmake.tags              /usr/share/qt6/doc/qmake/qmake.tags
+COPY qt6-tags/qt3d.tags               /usr/share/qt6/doc/qt3d/qt3d.tags
+COPY qt6-tags/qtconcurrent.tags       /usr/share/qt6/doc/qtconcurrent/qtconcurrent.tags
+COPY qt6-tags/qtcore.tags             /usr/share/qt6/doc/qtcore/qtcore.tags
+COPY qt6-tags/qtdbus.tags             /usr/share/qt6/doc/qtdbus/qtdbus.tags
+COPY qt6-tags/qtgui.tags              /usr/share/qt6/doc/qtgui/qtgui.tags
+COPY qt6-tags/qtlabsplatform.tags     /usr/share/qt6/doc/qtlabsplatform/qtlabsplatform.tags
+COPY qt6-tags/qtnetwork.tags          /usr/share/qt6/doc/qtnetwork/qtnetwork.tags
+COPY qt6-tags/qtnetworkauth.tags      /usr/share/qt6/doc/qtnetworkauth/qtnetworkauth.tags
+COPY qt6-tags/qtnfc.tags              /usr/share/qt6/doc/qtnfc/qtnfc.tags
+COPY qt6-tags/qtopcua.tags            /usr/share/qt6/doc/qtopcua/qtopcua.tags
+COPY qt6-tags/qtopengl.tags           /usr/share/qt6/doc/qtopengl/qtopengl.tags
+COPY qt6-tags/qtpositioning.tags      /usr/share/qt6/doc/qtpositioning/qtpositioning.tags
+COPY qt6-tags/qtprintsupport.tags     /usr/share/qt6/doc/qtprintsupport/qtprintsupport.tags
+COPY qt6-tags/qtqml.tags              /usr/share/qt6/doc/qtqml/qtqml.tags
+COPY qt6-tags/qtqmlmodels.tags        /usr/share/qt6/doc/qtqmlmodels/qtqmlmodels.tags
+COPY qt6-tags/qtqmltest.tags          /usr/share/qt6/doc/qtqmltest/qtqmltest.tags
+COPY qt6-tags/qtquick.tags            /usr/share/qt6/doc/qtquick/qtquick.tags
+COPY qt6-tags/qtquick3d.tags          /usr/share/qt6/doc/qtquick3d/qtquick3d.tags
+COPY qt6-tags/qtquick3dphysics.tags   /usr/share/qt6/doc/qtquick3dphysics/qtquick3dphysics.tags
+COPY qt6-tags/qtquickcontrols.tags    /usr/share/qt6/doc/qtquickcontrols/qtquickcontrols.tags
+COPY qt6-tags/qtquickdialogs.tags     /usr/share/qt6/doc/qtquickdialogs/qtquickdialogs.tags
+COPY qt6-tags/qtquicktimeline.tags    /usr/share/qt6/doc/qtquicktimeline/qtquicktimeline.tags
+COPY qt6-tags/qtremoteobjects.tags    /usr/share/qt6/doc/qtremoteobjects/qtremoteobjects.tags
+COPY qt6-tags/qtscxml.tags            /usr/share/qt6/doc/qtscxml/qtscxml.tags
+COPY qt6-tags/qtsensors.tags          /usr/share/qt6/doc/qtsensors/qtsensors.tags
+COPY qt6-tags/qtserialbus.tags        /usr/share/qt6/doc/qtserialbus/qtserialbus.tags
+COPY qt6-tags/qtshadertools.tags      /usr/share/qt6/doc/qtshadertools/qtshadertools.tags
+COPY qt6-tags/qtsql.tags              /usr/share/qt6/doc/qtsql/qtsql.tags
+COPY qt6-tags/qtstatemachine.tags     /usr/share/qt6/doc/qtstatemachine/qtstatemachine.tags
+COPY qt6-tags/qtsvg.tags              /usr/share/qt6/doc/qtsvg/qtsvg.tags
+COPY qt6-tags/qttestlib.tags          /usr/share/qt6/doc/qttestlib/qttestlib.tags
+COPY qt6-tags/qtwebchannel.tags       /usr/share/qt6/doc/qtwebchannel/qtwebchannel.tags
+COPY qt6-tags/qtwebengine.tags        /usr/share/qt6/doc/qtwebengine/qtwebengine.tags
+COPY qt6-tags/qtwebsockets.tags       /usr/share/qt6/doc/qtwebsockets/qtwebsockets.tags
+COPY qt6-tags/qtwidgets.tags          /usr/share/qt6/doc/qtwidgets/qtwidgets.tags
+COPY qt6-tags/qtxml.tags              /usr/share/qt6/doc/qtxml/qtxml.tags

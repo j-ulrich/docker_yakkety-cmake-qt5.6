@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tagfile>
+    <compound kind="class">
+        <name>QtQml.StateMachine.FinalState</name>
+        <filename>qml-qtqml-statemachine-finalstate.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.HistoryState</name>
+        <filename>qml-qtqml-statemachine-historystate.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QAbstractState</name>
+        <filename>qabstractstate.html</filename>
+        <base>QObject</base>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type></type>
+            <name>QAbstractState</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>QAbstractState</anchor>
+            <arglist>(QState *parent)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>event</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>event</anchor>
+            <arglist>(QEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>activeChanged</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>activeChanged</anchor>
+            <arglist>(bool active)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>entered</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>entered</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>exited</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>exited</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>onEntry</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>onEntry</anchor>
+            <arglist>(QEvent *event) = 0</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>onExit</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>onExit</anchor>
+            <arglist>(QEvent *event) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QAbstractState</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>dtor.QAbstractState</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QState *</type>
+            <name>parentState</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>parentState</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QStateMachine *</type>
+            <name>machine</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>machine</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>active</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>active</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>active</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>active-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.QAbstractState</name>
+        <filename>qml-qtqml-statemachine-qabstractstate.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>entered</name>
+            <anchorfile>qml-qtqml-statemachine-qabstractstate.html</anchorfile>
+            <anchor>entered-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>exited</name>
+            <anchorfile>qml-qtqml-statemachine-qabstractstate.html</anchorfile>
+            <anchor>exited-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QAbstractTransition</name>
+        <filename>qabstracttransition.html</filename>
+        <base>QObject</base>
+        <member kind="enumeration">
+            <name>TransitionType</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>TransitionType-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>ExternalTransition</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>TransitionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>InternalTransition</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>TransitionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAbstractTransition</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>QAbstractTransition</anchor>
+            <arglist>(QState *sourceState)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>event</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>event</anchor>
+            <arglist>(QEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="pure" static="no">
+            <type>virtual bool</type>
+            <name>eventTest</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>eventTest</anchor>
+            <arglist>(QEvent *event) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>addAnimation</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>addAnimation</anchor>
+            <arglist>(QAbstractAnimation *animation)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>onTransition</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>onTransition</anchor>
+            <arglist>(QEvent *event) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>removeAnimation</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>removeAnimation</anchor>
+            <arglist>(QAbstractAnimation *animation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setTargetState</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>setTargetState</anchor>
+            <arglist>(QAbstractState *target)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setTargetStates</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>setTargetStates</anchor>
+            <arglist>(const QList&lt;QAbstractState *&gt; &amp;targets)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setTransitionType</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>setTransitionType</anchor>
+            <arglist>(QAbstractTransition::TransitionType type)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>targetStateChanged</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>targetStateChanged</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>targetStatesChanged</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>targetStatesChanged</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>triggered</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>triggered</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QAbstractTransition</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>dtor.QAbstractTransition</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractState *</type>
+            <name>targetState</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>targetState</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractTransition::TransitionType</type>
+            <name>transitionType</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>transitionType</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QAbstractAnimation *&gt;</type>
+            <name>animations</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>animations</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QAbstractState *&gt;</type>
+            <name>targetStates</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>targetStates</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QState *</type>
+            <name>sourceState</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>sourceState</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QStateMachine *</type>
+            <name>machine</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>machine</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="QState*">
+            <name>sourceState</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>sourceState-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QAbstractState*">
+            <name>targetState</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>targetState-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QList&lt;QAbstractState*&gt;">
+            <name>targetStates</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>targetStates-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="TransitionType">
+            <name>transitionType</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>transitionType-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.QAbstractTransition</name>
+        <filename>qml-qtqml-statemachine-qabstracttransition.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>triggered</name>
+            <anchorfile>qml-qtqml-statemachine-qabstracttransition.html</anchorfile>
+            <anchor>triggered-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QEventTransition</name>
+        <filename>qeventtransition.html</filename>
+        <base>QAbstractTransition</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QEventTransition</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>QEventTransition-1</anchor>
+            <arglist>(QObject *object, QEvent::Type type, QState *sourceState)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QEventTransition</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>QEventTransition</anchor>
+            <arglist>(QState *sourceState)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>event</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>event</anchor>
+            <arglist>(QEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>eventTest</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>eventTest</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onTransition</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>onTransition</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setEventSource</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>setEventSource</anchor>
+            <arglist>(QObject *object)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setEventType</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>setEventType</anchor>
+            <arglist>(QEvent::Type type)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QEventTransition</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>dtor.QEventTransition</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QEvent::Type</type>
+            <name>eventType</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>eventType</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QObject *</type>
+            <name>eventSource</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>eventSource</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="QObject*">
+            <name>eventSource</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>eventSource-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QEvent::Type">
+            <name>eventType</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>eventType-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QFinalState</name>
+        <filename>qfinalstate.html</filename>
+        <base>QAbstractState</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QFinalState</name>
+            <anchorfile>qfinalstate.html</anchorfile>
+            <anchor>QFinalState</anchor>
+            <arglist>(QState *parent)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>event</name>
+            <anchorfile>qfinalstate.html</anchorfile>
+            <anchor>event</anchor>
+            <arglist>(QEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onEntry</name>
+            <anchorfile>qfinalstate.html</anchorfile>
+            <anchor>onEntry</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onExit</name>
+            <anchorfile>qfinalstate.html</anchorfile>
+            <anchor>onExit</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QFinalState</name>
+            <anchorfile>qfinalstate.html</anchorfile>
+            <anchor>dtor.QFinalState</anchor>
+            <arglist>()</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QHistoryState</name>
+        <filename>qhistorystate.html</filename>
+        <base>QAbstractState</base>
+        <member kind="enumeration">
+            <name>HistoryType</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>HistoryType-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>ShallowHistory</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>HistoryType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DeepHistory</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>HistoryType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHistoryState</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>QHistoryState-1</anchor>
+            <arglist>(QHistoryState::HistoryType type, QState *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHistoryState</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>QHistoryState</anchor>
+            <arglist>(QState *parent)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>event</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>event</anchor>
+            <arglist>(QEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>defaultStateChanged</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>defaultStateChanged</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>defaultTransitionChanged</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>defaultTransitionChanged</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>historyTypeChanged</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>historyTypeChanged</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onEntry</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>onEntry</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onExit</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>onExit</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setDefaultState</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>setDefaultState</anchor>
+            <arglist>(QAbstractState *state)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setDefaultTransition</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>setDefaultTransition</anchor>
+            <arglist>(QAbstractTransition *transition)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHistoryType</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>setHistoryType</anchor>
+            <arglist>(QHistoryState::HistoryType type)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QHistoryState</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>dtor.QHistoryState</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractState *</type>
+            <name>defaultState</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>defaultState</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractTransition *</type>
+            <name>defaultTransition</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>defaultTransition</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHistoryState::HistoryType</type>
+            <name>historyType</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>historyType</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="QAbstractState*">
+            <name>defaultState</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>defaultState-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QAbstractTransition*">
+            <name>defaultTransition</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>defaultTransition-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="HistoryType">
+            <name>historyType</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>historyType-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QKeyEventTransition</name>
+        <filename>qkeyeventtransition.html</filename>
+        <base>QEventTransition</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QKeyEventTransition</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>QKeyEventTransition-1</anchor>
+            <arglist>(QObject *object, QEvent::Type type, int key, QState *sourceState)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QKeyEventTransition</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>QKeyEventTransition</anchor>
+            <arglist>(QState *sourceState)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>eventTest</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>eventTest</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onTransition</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>onTransition</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setKey</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>setKey</anchor>
+            <arglist>(int key)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setModifierMask</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>setModifierMask</anchor>
+            <arglist>(Qt::KeyboardModifiers modifierMask)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QKeyEventTransition</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>dtor.QKeyEventTransition</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt::KeyboardModifiers</type>
+            <name>modifierMask</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>modifierMask</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>key</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>key</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="int">
+            <name>key</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>key-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="Qt::KeyboardModifiers">
+            <name>modifierMask</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>modifierMask-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QMouseEventTransition</name>
+        <filename>qmouseeventtransition.html</filename>
+        <base>QEventTransition</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QMouseEventTransition</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>QMouseEventTransition-1</anchor>
+            <arglist>(QObject *object, QEvent::Type type, Qt::MouseButton button, QState *sourceState)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QMouseEventTransition</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>QMouseEventTransition</anchor>
+            <arglist>(QState *sourceState)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>eventTest</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>eventTest</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onTransition</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>onTransition</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setButton</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>setButton</anchor>
+            <arglist>(Qt::MouseButton button)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHitTestPath</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>setHitTestPath</anchor>
+            <arglist>(const QPainterPath &amp;path)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setModifierMask</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>setModifierMask</anchor>
+            <arglist>(Qt::KeyboardModifiers modifierMask)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QMouseEventTransition</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>dtor.QMouseEventTransition</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QPainterPath</type>
+            <name>hitTestPath</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>hitTestPath</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt::KeyboardModifiers</type>
+            <name>modifierMask</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>modifierMask</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt::MouseButton</type>
+            <name>button</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>button</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="Qt::MouseButton">
+            <name>button</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>button-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="Qt::KeyboardModifiers">
+            <name>modifierMask</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>modifierMask-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QSignalTransition</name>
+        <filename>qsignaltransition.html</filename>
+        <base>QAbstractTransition</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSignalTransition</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>QSignalTransition</anchor>
+            <arglist>(QState *sourceState)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSignalTransition</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>QSignalTransition-2</anchor>
+            <arglist>(const QObject *sender, PointerToMemberFunction signal, QState *sourceState)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSignalTransition</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>QSignalTransition-1</anchor>
+            <arglist>(const QObject *sender, const char *signal, QState *sourceState)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>event</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>event</anchor>
+            <arglist>(QEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>eventTest</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>eventTest</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onTransition</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>onTransition</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>senderObjectChanged</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>senderObjectChanged</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSenderObject</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>setSenderObject</anchor>
+            <arglist>(const QObject *sender)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSignal</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>setSignal</anchor>
+            <arglist>(const QByteArray &amp;signal)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>signalChanged</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>signalChanged</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QSignalTransition</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>dtor.QSignalTransition</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArray</type>
+            <name>signal</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>signal</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>const QObject *</type>
+            <name>senderObject</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>senderObject</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="const QObject*">
+            <name>senderObject</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>senderObject-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QByteArray">
+            <name>signal</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>signal-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.QSignalTransition</name>
+        <filename>qml-qtqml-statemachine-qsignaltransition.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QState</name>
+        <filename>qstate.html</filename>
+        <base>QAbstractState</base>
+        <member kind="enumeration">
+            <name>ChildMode</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>ChildMode-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>ExclusiveStates</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>ChildMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ParallelStates</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>ChildMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>RestorePolicy</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>RestorePolicy-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>DontRestoreProperties</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>RestorePolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>RestoreProperties</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>RestorePolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractTransition *</type>
+            <name>addTransition</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>addTransition-3</anchor>
+            <arglist>(QAbstractState *target)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSignalTransition *</type>
+            <name>addTransition</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>addTransition-2</anchor>
+            <arglist>(const QObject *sender, PointerToMemberFunction signal, QAbstractState *target)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSignalTransition *</type>
+            <name>addTransition</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>addTransition-1</anchor>
+            <arglist>(const QObject *sender, const char *signal, QAbstractState *target)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QState</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>QState</anchor>
+            <arglist>(QState *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QState</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>QState-1</anchor>
+            <arglist>(QState::ChildMode childMode, QState *parent)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>event</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>event</anchor>
+            <arglist>(QEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>addTransition</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>addTransition</anchor>
+            <arglist>(QAbstractTransition *transition)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>assignProperty</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>assignProperty</anchor>
+            <arglist>(QObject *object, const char *name, const QVariant &amp;value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>childModeChanged</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>childModeChanged</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>errorStateChanged</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>errorStateChanged</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>finished</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>finished</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>initialStateChanged</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>initialStateChanged</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onEntry</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>onEntry</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onExit</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>onExit</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>propertiesAssigned</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>propertiesAssigned</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>removeTransition</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>removeTransition</anchor>
+            <arglist>(QAbstractTransition *transition)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setChildMode</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>setChildMode</anchor>
+            <arglist>(QState::ChildMode mode)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setErrorState</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>setErrorState</anchor>
+            <arglist>(QAbstractState *state)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setInitialState</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>setInitialState</anchor>
+            <arglist>(QAbstractState *state)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QState</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>dtor.QState</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractState *</type>
+            <name>errorState</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>errorState</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractState *</type>
+            <name>initialState</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>initialState</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QAbstractTransition *&gt;</type>
+            <name>transitions</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>transitions</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QState::ChildMode</type>
+            <name>childMode</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>childMode</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="ChildMode">
+            <name>childMode</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>childMode-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QAbstractState*">
+            <name>errorState</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>errorState-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QAbstractState*">
+            <name>initialState</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>initialState-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QStateMachine</name>
+        <filename>qstatemachine.html</filename>
+        <base>QState</base>
+        <class>QStateMachine::SignalEvent</class>
+        <class>QStateMachine::WrappedEvent</class>
+        <member kind="enumeration">
+            <name>Error</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>Error-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>NoError</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>NoInitialStateError</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>NoDefaultStateInHistoryStateError</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>NoCommonAncestorForTransitionError</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>StateMachineChildModeSetToParallelError</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>EventPriority</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>EventPriority-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>NormalPriority</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>EventPriority-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>HighPriority</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>EventPriority-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QStateMachine</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>QStateMachine</anchor>
+            <arglist>(QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QStateMachine</name>
+            <anchorfile>qstatemachine-obsolete.html</anchorfile>
+            <anchor>QStateMachine-1</anchor>
+            <arglist>(QState::ChildMode childMode, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>cancelDelayedEvent</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>cancelDelayedEvent</anchor>
+            <arglist>(int id)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>event</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>event</anchor>
+            <arglist>(QEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>eventFilter</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>eventFilter</anchor>
+            <arglist>(QObject *watched, QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>postDelayedEvent</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>postDelayedEvent</anchor>
+            <arglist>(QEvent *event, int delay)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>postDelayedEvent</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>postDelayedEvent-1</anchor>
+            <arglist>(QEvent *event, std::chrono::milliseconds delay)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>addDefaultAnimation</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>addDefaultAnimation</anchor>
+            <arglist>(QAbstractAnimation *animation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>addState</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>addState</anchor>
+            <arglist>(QAbstractState *state)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearError</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>clearError</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onEntry</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>onEntry</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>onExit</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>onExit</anchor>
+            <arglist>(QEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>postEvent</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>postEvent</anchor>
+            <arglist>(QEvent *event, QStateMachine::EventPriority priority)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>removeDefaultAnimation</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>removeDefaultAnimation</anchor>
+            <arglist>(QAbstractAnimation *animation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>removeState</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>removeState</anchor>
+            <arglist>(QAbstractState *state)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>runningChanged</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>runningChanged</anchor>
+            <arglist>(bool running)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setAnimated</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>setAnimated</anchor>
+            <arglist>(bool enabled)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setGlobalRestorePolicy</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>setGlobalRestorePolicy</anchor>
+            <arglist>(QState::RestorePolicy restorePolicy)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setRunning</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>running-prop</anchor>
+            <arglist>(bool running)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>start</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>start</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>started</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>started</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>stop</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>stop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>stopped</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>stopped</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QStateMachine</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>dtor.QStateMachine</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QAbstractAnimation *&gt;</type>
+            <name>defaultAnimations</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>defaultAnimations</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSet&lt;QAbstractState *&gt;</type>
+            <name>configuration</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>configuration</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QState::RestorePolicy</type>
+            <name>globalRestorePolicy</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>globalRestorePolicy</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QStateMachine::Error</type>
+            <name>error</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>error</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>errorString</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>errorString</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isAnimated</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>isAnimated</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isRunning</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>running-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>animated</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>animated-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>errorString</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>errorString-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QState::RestorePolicy">
+            <name>globalRestorePolicy</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>globalRestorePolicy-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>running</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>running-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QStateMachine::SignalEvent</name>
+        <filename>qstatemachine-signalevent.html</filename>
+        <base>QEvent</base>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~SignalEvent</name>
+            <anchorfile>qstatemachine-signalevent.html</anchorfile>
+            <anchor>dtor.SignalEvent</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QVariant&gt;</type>
+            <name>arguments</name>
+            <anchorfile>qstatemachine-signalevent.html</anchorfile>
+            <anchor>arguments</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QObject *</type>
+            <name>sender</name>
+            <anchorfile>qstatemachine-signalevent.html</anchorfile>
+            <anchor>sender</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>signalIndex</name>
+            <anchorfile>qstatemachine-signalevent.html</anchorfile>
+            <anchor>signalIndex</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QStateMachine::WrappedEvent</name>
+        <filename>qstatemachine-wrappedevent.html</filename>
+        <base>QEvent</base>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~WrappedEvent</name>
+            <anchorfile>qstatemachine-wrappedevent.html</anchorfile>
+            <anchor>dtor.WrappedEvent</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QEvent *</type>
+            <name>event</name>
+            <anchorfile>qstatemachine-wrappedevent.html</anchorfile>
+            <anchor>event</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QObject *</type>
+            <name>object</name>
+            <anchorfile>qstatemachine-wrappedevent.html</anchorfile>
+            <anchor>object</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.SignalTransition</name>
+        <filename>qml-qtqml-statemachine-signaltransition.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.State</name>
+        <filename>qml-qtqml-statemachine-state.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>finished</name>
+            <anchorfile>qml-qtqml-statemachine-state.html</anchorfile>
+            <anchor>finished-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.StateMachine</name>
+        <filename>qml-qtqml-statemachine-statemachine.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>start</name>
+            <anchorfile>qml-qtqml-statemachine-statemachine.html</anchorfile>
+            <anchor>start-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>started</name>
+            <anchorfile>qml-qtqml-statemachine-statemachine.html</anchorfile>
+            <anchor>started-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>stop</name>
+            <anchorfile>qml-qtqml-statemachine-statemachine.html</anchorfile>
+            <anchor>stop-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>stopped</name>
+            <anchorfile>qml-qtqml-statemachine-statemachine.html</anchorfile>
+            <anchor>stopped-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.TimeoutTransition</name>
+        <filename>qml-qtqml-statemachine-timeouttransition.html</filename>
+    </compound>
+</tagfile>
