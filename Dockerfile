@@ -20,11 +20,11 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     lcov \
     openjdk-17-jre \
     python3 \
-    python3-pip \
+    pipx \
     curl \
     unzip \
     && rm -rf /var/lib/apt/lists/*
-RUN pip3 install "coverxygen==1.8.1"
+RUN pipx install "coverxygen==1.8.1"
 
 RUN qtchooser -install 6 /usr/bin/qmake6 && qtchooser -install -f default /usr/bin/qmake6
 RUN qbs setup-toolchains --detect && qbs setup-qt /usr/bin/qmake6 qt-6-4-2-bin && qbs config defaultProfile qt-6-4-2-bin
