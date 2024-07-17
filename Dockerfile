@@ -32,7 +32,6 @@ RUN python3 -m venv ~/.virtualenvs/coverxygen \
 ENV VIRTUAL_ENV=/root/.virtualenvs/coverxygen
 ENV PATH=/root/.virtualenvs/coverxygen/bin:$PATH
 
-RUN qtchooser -install 6 /usr/bin/qmake6 && qtchooser -install -f default /usr/bin/qmake6
 RUN qbs setup-toolchains --detect && qbs setup-qt /usr/bin/qmake6 qt-6-4-2-bin && qbs config defaultProfile qt-6-4-2-bin
 
 COPY sonar-scanner /opt/sonar-scanner/
