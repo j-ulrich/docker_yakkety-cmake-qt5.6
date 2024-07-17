@@ -1,4 +1,4 @@
-# Dockerfile: Ubuntu Jammy, Qt 6.4
+# Dockerfile: Ubuntu Noble, Qt 6.4
 
 Dockerfile for creating images for building and automated testing of Qt 6 applications.
 
