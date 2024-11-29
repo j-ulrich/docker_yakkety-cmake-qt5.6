@@ -35,7 +35,8 @@ RUN python3 -m venv ~/.virtualenvs/coverxygen \
 ENV VIRTUAL_ENV=/root/.virtualenvs/coverxygen
 ENV PATH=/root/.local/bin:/root/.virtualenvs/coverxygen/bin:$PATH
 
-RUN qbs setup-toolchains --detect && qbs setup-qt /usr/bin/qmake6 qt-6-4-2-bin && qbs config defaultProfile qt-6-4-2-bin
+RUN qbs setup-toolchains --detect && qbs setup-qt /usr/bin/qmake6 qt-6-4-2-bin && qbs config defaultProfile qt-6-4-2-bin \
+  && conan profile detect --force
 
 COPY sonar-scanner /opt/sonar-scanner/
 RUN chmod a+x /opt/sonar-scanner/bin/sonar-scanner*
