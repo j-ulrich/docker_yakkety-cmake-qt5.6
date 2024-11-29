@@ -1,6 +1,6 @@
 # Dockerfile: Ubuntu Noble, Qt 6.4
 
-Dockerfile for creating images for building and automated testing of Qt 6 applications.
+Docker image for building and testing of Qt 6 applications.
 
 Image configuration:
 - Ubuntu Noble (24.04)
@@ -17,6 +17,7 @@ Image configuration:
 	- qt6-translations-l10n
 - GCC/G++ 13.2.0
 - CMake 3.28.3
+- Conan 2.9.3
 - Qbs 2.1.2 (default profile: qt-6-4-2-bin)
 - Doxygen 1.9.8
 - gcovr 7.0

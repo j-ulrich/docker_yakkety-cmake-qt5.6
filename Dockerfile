@@ -22,15 +22,18 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     python3 \
     python3-pip \
     python3-venv \
+    pipx \
     curl \
     unzip \
     && rm -rf /var/lib/apt/lists/*
+
 RUN python3 -m venv ~/.virtualenvs/coverxygen \
  && . ~/.virtualenvs/coverxygen/bin/activate \
- && pip3 install "coverxygen==1.8.1"
+ && pip3 install "coverxygen==1.8.1" \
+ && pipx install "conan==2.9.3"
 
 ENV VIRTUAL_ENV=/root/.virtualenvs/coverxygen
-ENV PATH=/root/.virtualenvs/coverxygen/bin:$PATH
+ENV PATH=/root/.local/bin:/root/.virtualenvs/coverxygen/bin:$PATH
 
 RUN qbs setup-toolchains --detect && qbs setup-qt /usr/bin/qmake6 qt-6-4-2-bin && qbs config defaultProfile qt-6-4-2-bin
 
